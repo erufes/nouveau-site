@@ -4,6 +4,7 @@ import createMDX from "@next/mdx";
 const nextConfig: NextConfig = {
   // A stray lockfile in the user home makes Next infer the wrong
   // workspace root; pin it to this project.
+  output: "standalone",
   turbopack: {
     root: __dirname,
   },
